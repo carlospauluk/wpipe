@@ -1,0 +1,95 @@
+.tm-rate-form__field {
+	margin: 0;
+	vertical-align: top;
+}
+
+.tm-rate-form span.error {
+	display: block;
+	font-size: 90%;
+	text-align: right;
+	color: red;
+}
+
+.tm-rate-form__btns {
+	text-align: right;
+	padding-top: 15px;
+}
+
+.tm-rate-form__btn {
+	position: relative;
+	&:focus {
+		box-shadow: 0 0 10px inset;
+	}
+	&[disabled],
+	&.success {
+		cursor: default;
+		pointer-events: none;
+		.tm-rate-form__btn-text {
+			opacity: 0;
+		}
+	}
+	&[disabled] {
+		.tm-rate-form__btn-loader {
+			transform: scale(1);
+
+			opacity: 1;
+		}
+	}
+	&.success {
+		.tm-rate-form__btn-icon {
+			transition-delay: .1s;
+			transform: scale(1);
+
+			opacity: 1;
+		}
+	}
+}
+
+.tm-rate-form__btn-icon,
+.tm-rate-form__btn-loader {
+	transition: opacity .5s ease, transform .5s ease;
+	transform: scale(0);
+
+	opacity: 0;
+}
+.tm-rate-form__btn-icon {
+	font-size: 40px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0 -20px;
+}
+.tm-rate-form__btn-loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 20px;
+	height: 20px;
+	margin: -13px 0 0 -13px;
+	span {
+		display: block;
+
+		width: 20px;
+		height: 20px;
+
+		animation: spin .7s linear infinite;
+
+		border: 3px solid #FFF;
+		border-top: 3px solid #3498DB;
+		border-radius: 50%;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

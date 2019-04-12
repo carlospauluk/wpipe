@@ -1,0 +1,17 @@
+$star-color: #c7c7c7;
+$accent-star-color: #ffc045;
+
+.cherry-trend-star {
+	width: 17px;
+	height: 17px;
+	font-size: 17px;
+	color: $star-color;
+	vertical-align: baseline;
+
+	&--active {
+		&,
+		& ~ .cherry-trend-star {
+			color: $accent-star-color;
+		}
+	}
+}
