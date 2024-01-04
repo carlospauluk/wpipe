@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'ipesports04');
+define('DB_NAME', 'ipesports_wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'ipesports04');
+define('DB_USER', 'ipesports_wordpress');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wpipe1954Ipe');
+define('DB_PASSWORD', 'bdwp@@Ipe--1954-Feliz-@@@2019');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.ipesports.com.br');
+define('DB_HOST', 'www.crosier.com.br');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
